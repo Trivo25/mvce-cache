@@ -19,17 +19,21 @@
   "types": "build/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "do-bug": "node build/main.js && node build/main.js"
+    "do-bug": "npm run build && node build/main.js && node build/main.js"
   },
   "devDependencies": {
     "@types/node": "^24.7.0",
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
+    "@nori-zk/o1js-zk-utils": "0.0.15",
     "o1js": "2.10.0"
   },
   "engines": {
     "node": ">=22.0.0"
+  },
+  "overrides": {
+    "o1js": "2.10.0"
   },
   "files": [
     "build"
