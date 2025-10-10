@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": "src",
+    "target": "es2021",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "baseUrl": ".",
+    "paths": {
+      "o1js": ["./node_modules/o1js"],
+      "*": ["*", "src/*", "./node_modules/*"]
+    },
+    "types": ["node"],
+    "isolatedModules": true,
+    "lib": ["dom", "esnext"],
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "declaration": true,
+    "sourceMap": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": false,
+    "strictNullChecks": false
+  },
+  "include": [
+    "./src"
+  ],
+  "exclude": ["**/*.spec.ts"]
+}

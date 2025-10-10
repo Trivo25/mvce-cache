@@ -1,0 +1,37 @@
+{
+  "name": "mvce-cache",
+  "version": "0.0.1",
+  "description": "Cache issue",
+  "author": "Nori",
+  "license": "Apache-2.0",
+  "keywords": [
+    "mina-zkapp",
+    "mina-zk-app",
+    "mina-dapp",
+    "zkapp"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "type": "module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "do-bug": "node build/main.js && node build/main.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "o1js": "2.10.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "files": [
+    "build"
+  ]
+}
