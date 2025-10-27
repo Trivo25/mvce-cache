@@ -13,7 +13,7 @@ import seriesExample4 from './8695552/index.js';
 async function main() {
   console.log('Compiling EthVerifier...');
   await EthVerifier.compile({
-    cache: { ...Cache.FileSystem('./cache', true), canWrite: true },
+    cache: { ...Cache.FileSystem('./cache', false), canWrite: true },
   });
 
   async function createProof(
