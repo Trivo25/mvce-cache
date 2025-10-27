@@ -8,7 +8,8 @@ import {
 } from '@nori-zk/o1js-zk-utils';
 import seriesExample1 from './8695456/index.js';
 import seriesExample2 from './8695488/index.js';
-
+import seriesExample3 from './8695520/index.js';
+import seriesExample4 from './8695552/index.js';
 async function main() {
   console.log('Compiling EthVerifier...');
   await EthVerifier.compile({
@@ -50,6 +51,16 @@ async function main() {
   console.log('proof 2');
   const ethProof2 = await createProof(seriesExample2);
   console.log('proof 2 done');
+
+  console.log('proof 3');
+  const ethProof3 = await createProof(seriesExample3);
+  console.log('proof 3 done');
+
+  console.log('proof 4');
+  const ethProof4 = await createProof(seriesExample4);
+  console.log('proof 4 done');
+
+  console.log('########## All proofs done ##########');
 }
 
 main().catch((err) => {
