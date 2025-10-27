@@ -27,13 +27,13 @@
   },
   "peerDependencies": {
     "@nori-zk/o1js-zk-utils": "0.0.15",
-    "o1js": "https://pkg.pr.new/o1-labs/o1js@783c9ae"
+    "o1js": "https://pkg.pr.new/o1-labs/o1js@37bfbfa"
   },
   "engines": {
     "node": ">=22.0.0"
   },
   "overrides": {
-    "o1js": "https://pkg.pr.new/o1-labs/o1js@783c9ae"
+    "o1js": "https://pkg.pr.new/o1-labs/o1js@37bfbfa"
   },
   "files": [
     "build"
